@@ -22,7 +22,7 @@ Team Id - ML/ 71
 
 ## Link to product walkthrough
 
-See our [video](https://drive.google.com/file/d/1IJA4t4AMoGe-rauD6HeoDPTrMkKpj0aV/view?usp=sharing) for more details
+See our [video](https://www.loom.com/share/30d978b2a40b4782a915683ae0249419) for more details
 
 ## How it Works ?
 
