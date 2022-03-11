@@ -24,3 +24,5 @@ urlpatterns = [
     path('market/',views.market,name="market"),
     path('talk/',views.talk,name="talk")
 ]
+handler404 = views.page_not_found
+handler500 = views.internal_error

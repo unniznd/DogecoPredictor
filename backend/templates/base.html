@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.svg' %}"/>
 
     {% if title %}
         <title>DogecoPredictor - {{ title }}</title>
@@ -22,7 +23,8 @@
     <header class="site-header">
       <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-          <a class="navbar-brand mr-4" href="#">DogecoPredictor</a>
+          <img src="{% static 'favicon.svg' %}" class="nav-logo">
+          <a class="navbar-brand mr-4" href="{% url 'predictor' %}">DogecoPredictor</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,9 +42,16 @@
     </header>
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-8">
-          {% block content %}{% endblock %}
-        </div>
+          <div class="col-md-8">
+            {% if messages %}
+              {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+            {% block content %}{% endblock %}
+          </div>
         <div class="col-md-4">
           <div class="content-section">
             <h3>DogePredictor</h3>
