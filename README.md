@@ -4,6 +4,8 @@ DogecoPredictor is open source ML powered predictor for DogeCoin. The previous d
 
 Website : [DogecoPredictor](https://dogecopredictor.herokuapp.com/)
 
+ML Model : [Predictor](https://colab.research.google.com/drive/1NMj--2cS245yiCtcg6qvt0LvbqUc-47S?usp=sharing)
+
 
 ![dogecoin-meme](https://user-images.githubusercontent.com/66952088/157790311-179f26ce-e104-46e6-af89-d28960a60c3b.jpg)
 
