@@ -22,7 +22,7 @@ Team Id - ML/ 71
 
 ## Link to product walkthrough
 
-Add link here
+See our [video](https://drive.google.com/file/d/1IJA4t4AMoGe-rauD6HeoDPTrMkKpj0aV/view?usp=sharing) for more details
 
 ## How it Works ?
 
