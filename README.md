@@ -61,7 +61,7 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Configure SECRET_KEY and ALLOWED_HOSTS in settings.py
+Create file ```predictor/dev_settings.py``` and Configure SECRET_KEY and ALLOWED_HOSTS
 
 ```
 SECRET_KEY = "add_secret_key_here"
@@ -75,6 +75,8 @@ Make migrations
 python manage.py makemigrations
 python manage.py migrate
 ```
+
+Set ```debug = False ``` in ```predictor/settings.py```
 
 ## How to Run
 
